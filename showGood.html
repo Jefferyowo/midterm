@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            text-align :center;
+            background-color:#E1BE9B;
+            width:0500px;
+        }
+        h1{
+            width: 250px;
+            margin: 50px auto;
+        }
+        table,.a{
+            width: 380px;
+            margin: 50px auto;
+            border-collapse: collapse;
+        }
+        form{
+            width: 450px;
+            margin:50px auto 0;
+        }
+        td{
+            border: 2px solid #BC9167;
+        }
+        .del,.revise{
+            padding-left: 125px;
+        }
+    </style>
+</head>
+<body>
+<div class='all'>
+    <h1 align='center'>產品資訊</h1>
+    <form align='center' method = "post" action="addtoCart.py">
+        選擇要添加購物車的產品編號:
+        <select name='select_name'>
+            text
+        </select>
+        <input type='submit' value='新增'>
+    </form>
+    <table>
+        <tr align='center'>
+            <td>產品編號</td>
+            <td>產品名稱</td>
+            <td>產品價格</td>
+            <td>剩餘數量</td>
+        </tr>
+            msg
+    </table>
+    <div class="a"><a href='showCart.py'>查看購物車</a></div>
+</div>
+</body>
+</html>

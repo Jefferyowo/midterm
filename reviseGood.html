@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>revise_Goods</title>
+</head>
+<style>
+.all{
+    background-color:#E1BE9B;
+}
+</style>
+<body>
+<p>修改產品資訊</p>
+<hr>
+<div class='all'>
+<fieldset>
+<legend>輸入新的產品資訊</legend>
+<form method="post" action="revise.py">
+    <p>產品編號:###pid###  <input type="text" name='pid' value="###pid###" readonly="readonly"></p>
+    <p>原產品名稱:###name###  新的產品名稱: <input type="text" name='allName'></p>
+    <p>原產品價格:###price###  新的產品價格: <input type="text" name='allPrice'></p>
+    <p>原產品庫存:###number###  新的產品庫存: <input type="text" name='allNum'></p>
+    <input type="submit" value='修改'>
+</form>
+</fieldset>
+</div>
+<div class="a"><a href='manage.py'>回庫存</a></div>
+</body>
+</html>

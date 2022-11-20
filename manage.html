@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .all{
+            text-align :center;
+            background-color:#E1BE9B;
+            width:0500px;
+        }
+        h1{
+            width: 250px;
+            margin: 50px auto 0;
+        }
+        table,.a{
+            width: 400px;
+            margin: 50px auto 0;
+            border-collapse: collapse;
+        }
+        form{
+            width: 450px;
+            margin:50px auto 0;
+        }
+        td{
+            border: 2px solid #BC9167;
+        }
+        .del,.revise{
+            padding-left: 125px;
+        }
+    </style>
+</head>
+<body>
+<div class='all'>
+    <h1 align='center'>管理端庫存</h1>
+    <form method = "post" action="delGood.py" class="del">
+        選擇要刪除的產品編號:
+        <select name='select_name'>
+            text
+        </select> 
+        <input type='submit' value='刪除'>
+    </form>
+    <form method = "post" action="reviseGood.py" class="revise">
+        選擇要修改的產品編號:
+        <select name='select_name2'>
+            text2
+        </select>
+        <input type='submit' value='修改'>
+    </form>
+    <table>
+        <tr align='center'>
+            <td>產品編號</td>
+            <td>產品名稱</td>
+            <td>產品價格</td>
+            <td>剩餘數量</td>
+        msg
+    </table>
+    <div class="a"><a href='AddGood.html'>新增貨品</a></div>
+</div>
+</body>
+</html>
